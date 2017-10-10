@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="/home/quirky30/Desktop/CTP/src/CPT.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<div class="topnav">
+  <a class="active" href="/home/quirky30/Desktop/CTP/pages/CPT.html">Home</a>
+  <a href="/home/quirky30/Desktop/CTP/pages/gallery.html">Gallery</a>
+  <a href="/home/quirky30/Desktop/CTP/pages/contact.html">Contact</a>
+  <a href="/home/quirky30/Desktop/CTP/pages/about.html">About</a>
+  <a href="/home/quirky30/Desktop/CTP/pages/events.html">Events</a>
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="/home/quirky30/Desktop/CTP/images/8ce8f108b923cc314920c83497897b6d.preview.jpg" style="width:100%">
+  <img class="mySlides" src="/home/quirky30/Desktop/CTP/images/58c11ba958fbe7d47aa03a47f78c5fff.img.jpg" style="width:100%">
+  <img class="mySlides" src="/home/quirky30/Downloads/sunrise_breakfast_party_2015.jpg" style="width:100%">
+   <img class="mySlides" src="/home/quirky30/Downloads/events-logo.jpg" style="width:100%">
+  <img class="mySlides" src="/home/quirky30/Downloads/event_wc_cape_naked_cycle_posing_before.jpg" style="width:100%">
+  <img class="mySlides" src="/home/quirky30/Desktop/CTP/images/fee06257a6b842b08c81b337c675c10d-1024x895.jpg" style="width:100%">
+  <img src="/home/quirky30/Desktop/CTP/images/wp_ss_20151018_0002.jpg" style="width: 100%">
+  
+  
+
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+</body>
+</html>
